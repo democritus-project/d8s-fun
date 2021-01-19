@@ -16,7 +16,7 @@ with open('requirements_dev.txt') as requirements_dev_file:
 setup(
     name='democritus_fun',
     version=__version__,
-    description="Democritus functions for working with fun things.",
+    description="Fun Democritus functions.",
     long_description=readme,
     long_description_content_type="text/markdown",
     author="Floyd Hightower",
