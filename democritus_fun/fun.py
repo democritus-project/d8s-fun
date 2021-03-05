@@ -2,8 +2,9 @@ import functools
 import random
 import time
 
-
-PASSWORD_CHARACTER_SET = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&()*+,-.:;<=>?@[]^_`{|}~'
+PASSWORD_CHARACTER_SET = (
+    '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&()*+,-.:;<=>?@[]^_`{|}~'  # nosec
+)
 
 
 def spinner(cycles: int = 10, *, frames_per_second: int = 10) -> None:
@@ -24,7 +25,6 @@ def spinner(cycles: int = 10, *, frames_per_second: int = 10) -> None:
 def assumption_make():
     options = (
         'we have a can opener',
-        'we are considering the survival of whales (https://www.chegg.com/homework-help/assume-considering-survival-whales-number-whales-falls-minim-chapter-11.1-problem-7p-solution-9781111795665-exc)',
         'normal distribution',
         'that I exist',
         'air is diatomic',
@@ -33,7 +33,7 @@ def assumption_make():
         'that all assumptions are invalid',
     )
 
-    print('I\'ve assumed {}.'.format(random.choice(options)))
+    print('I\'ve assumed {}.'.format(random.choice(options)))  # nosec
 
 
 def password_create(*, length: int = 15, character_set: str = PASSWORD_CHARACTER_SET) -> str:
