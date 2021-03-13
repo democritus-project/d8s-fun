@@ -1,6 +1,6 @@
 import time
 
-from democritus_fun import password_create, spin_until_done
+from d8s_fun import password_create, spin_until_done
 
 
 def test_password_create_1():
