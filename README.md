@@ -1,8 +1,11 @@
 # Democritus Fun
 
 [![PyPI](https://img.shields.io/pypi/v/d8s-fun.svg)](https://pypi.python.org/pypi/d8s-fun)
-[![Build Status](https://travis-ci.com/democritus-project/d8s-fun.svg?branch=main)](https://travis-ci.com/democritus-project/d8s-fun)
+[![CI](https://github.com/democritus-project/d8s-fun/workflows/CI/badge.svg)](https://github.com/democritus-project/d8s-fun/actions)
+[![Lint](https://github.com/democritus-project/d8s-fun/workflows/Lint/badge.svg)](https://github.com/democritus-project/d8s-fun/actions)
 [![codecov](https://codecov.io/gh/democritus-project/d8s-fun/branch/main/graph/badge.svg?token=V0WOIXRGMM)](https://codecov.io/gh/democritus-project/d8s-fun)
+[![The Democritus Project uses semver version 2.0.0](https://img.shields.io/badge/-semver%20v2.0.0-22bfda)](https://semver.org/spec/v2.0.0.html)
+[![The Democritus Project uses black to format code](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 Fun Democritus functions<sup>[1]</sup>.
 
