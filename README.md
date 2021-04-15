@@ -14,9 +14,24 @@ Fun Democritus functions<sup>[1]</sup>.
 
 We use `d8s` as an abbreviation for `democritus` (you can read more about this [here](https://github.com/democritus-project/roadmap#what-is-d8s)).
 
-## Usage
+## Functions
 
-Coming soon...
+  - ```python
+    def spinner(cycles: int = 10, *, frames_per_second: int = 10) -> None:
+        """Print a spinner."""
+    ```
+  - ```python
+    def assumption_make():
+        """."""
+    ```
+  - ```python
+    def password_create(*, length: int = 15, character_set: str = PASSWORD_CHARACTER_SET) -> str:
+        """Create a password of the given length using the given character_set."""
+    ```
+  - ```python
+    def spin_until_done(func):
+        """Show a spinner until the function is done."""
+    ```
 
 ## Development
 
