@@ -2,9 +2,7 @@ import functools
 import random
 import time
 
-PASSWORD_CHARACTER_SET = (
-    '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&()*+,-.:;<=>?@[]^_`{|}~'  # nosec
-)
+PASSWORD_CHARACTER_SET = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&()*+,-.:;<=>?@[]^_`{|}~"  # nosec
 
 
 def spinner(cycles: int = 10, *, frames_per_second: int = 10) -> None:
@@ -12,33 +10,33 @@ def spinner(cycles: int = 10, *, frames_per_second: int = 10) -> None:
     for i in range(0, cycles * 4):
         time.sleep(1 / frames_per_second)
         if i % 4 == 0:
-            print('\r|', end='')
+            print("\r|", end="")
         elif i % 4 == 1:
-            print('\r/', end='')
+            print("\r/", end="")
         elif i % 4 == 2:
-            print('\r-', end='')
+            print("\r-", end="")
         else:
-            print('\r\\', end='')
-    print('\r|', end='')
+            print("\r\\", end="")
+    print("\r|", end="")
 
 
 def assumption_make():
     options = (
-        'we have a can opener',
-        'normal distribution',
-        'that I exist',
-        'air is diatomic',
-        'that assumptions are dangerous',
-        'coffee',
-        'that all assumptions are invalid',
+        "we have a can opener",
+        "normal distribution",
+        "that I exist",
+        "air is diatomic",
+        "that assumptions are dangerous",
+        "coffee",
+        "that all assumptions are invalid",
     )
 
-    print('I\'ve assumed {}.'.format(random.choice(options)))  # nosec
+    print("I've assumed {}.".format(random.choice(options)))  # nosec
 
 
 def password_create(*, length: int = 15, character_set: str = PASSWORD_CHARACTER_SET) -> str:
     """Create a password of the given length using the given character_set."""
-    return ''.join(random.choices(character_set, k=length))
+    return "".join(random.choices(character_set, k=length))
 
 
 def spin_until_done(func):
